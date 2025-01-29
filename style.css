@@ -1,0 +1,88 @@
+html, body{
+    overflow-x: hidden;
+    height: 100%;
+}
+.container{
+    border-radius: 10px;
+    height: 500px;
+    margin: auto;
+    margin-top: 27px !important;
+}
+
+#addTask{
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 3px 8px;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+}
+#taskArea{
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 5px;
+    list-style: none;
+}
+.taskContainer{
+    margin-top: 1.5rem;
+    background-color: white;
+    height: 210px;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 0;
+}
+.deleteButton{
+    border: none;
+    padding: 0;
+}
+#doneStat {
+    float: right;
+    margin-right: 10px;
+    padding: 2px;
+    border-radius: 10px;
+}
+#unfinishedStat{
+    background-color: rgb(171, 36, 36);
+    padding: 2px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: white;
+    float: right;
+}
+#markButton{
+    border: none;
+    padding: 0;
+    background: none;
+}
+.deleteButton{
+    background: none;
+}
+.taskElement{
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 577px ){
+    .container{
+        border-radius: 0%;
+        margin: auto !important;
+        margin-top: 0 !;
+        padding-bottom: 500px !important;
+        height: 100vh;
+    }
+    .titlelogo{
+        text-align: center;
+    }
+    p{
+        padding: 0 !important;
+        text-align: center;
+    }
+    .taskContainer{
+        height: 60vh!important;
+    }
+}
+@media only screen and (max-width: 431px){
+    .container{
+        padding-top: 5rem !important;
+    }
+}
